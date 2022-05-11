@@ -14,7 +14,7 @@ async def predict():
         review = request.form.get('review')
         
         sentiment = await pre.get_sentiment(review)
-        sentiment = sentiment[0]
+        sentiment = sentiment[0].capitalize()
         
         return redirect(url_for('get_results', sentiment=sentiment))
 

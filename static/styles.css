@@ -1,0 +1,11 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #202040;
+    color: white;
+    font-size: 35px;
+}
+
+textarea {
+    width: 100%;
+}
