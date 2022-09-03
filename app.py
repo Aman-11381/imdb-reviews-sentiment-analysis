@@ -12,7 +12,7 @@ async def predict():
     if(request.method == "POST"):
 
         review = request.form.get('review')
-        
+     
         sentiment = await pre.get_sentiment(review)
         sentiment = sentiment[0].capitalize()
         
